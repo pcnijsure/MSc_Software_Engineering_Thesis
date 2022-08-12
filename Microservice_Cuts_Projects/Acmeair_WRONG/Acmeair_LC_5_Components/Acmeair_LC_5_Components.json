@@ -1,0 +1,61 @@
+{
+	"name":"Acmeair_LC_5_Components",
+	"services": [
+	{
+		"nanoentities": ["BookingsREST.bs",
+						"CustomerInfo._id",
+						"CustomerInfo.password",
+						"CustomerInfo.status",
+						"CustomerInfo.total_miles",
+						"CustomerInfo.miles_ytd",
+						"CustomerInfo.address",
+						"CustomerInfo.phoneNumber",
+						"CustomerInfo.phoneNumberType",
+						"CustomerREST.customerService",
+						"CustomerREST.request",
+						"LoginREST.SESSIONID_COOKIE_NAME",
+						"LoginREST.authService",
+						"LoginREST.customerService",
+						"RESTCookieSessionFilter.LOGIN_USER",
+						"RESTCookieSessionFilter.LOGIN_PATH",
+						"RESTCookieSessionFilter.LOADDB_PATH",
+						"RESTCookieSessionFilter.QUERY_PATH",
+						"RESTCookieSessionFilter.authService",
+						"FlightsREST.flightService",
+						"BookingLoader.bookingService",
+						"SessionLoader.authService",
+						"CustomerServiceImpl.logger",
+						"CustomerServiceImpl.customer"],
+		"id": "1",
+		"name": "Service 1"
+	},
+		{
+		"nanoentities": ["FlightService.logger",
+						"FlightService.useFlightDataRelatedCaching",
+						"FlightService.acmeairDir",
+						"FlightService.originAndDestPortToSegmentCache",
+						"FlightService.flightSegmentAndDataToFlightCache",
+						"FlightService.flightPKtoFlightCache",
+						"ConnectionManager.connectionManager",
+						"ConnectionManager.logger",
+						"ConnectionManager.mongoClient",
+						"ConnectionManager.db"],
+		"id": "2",
+		"name": "Service 2"
+	}, 	{
+		"nanoentities": ["AcmeAirConstants",
+						"ServiceRegister"],
+		"id": "3",
+		"name": "Service 3"
+	}, 	{
+		"nanoentities": ["BookingService",
+						"Loader.flightLoader",
+						"Loader.customerLoader",
+						"Loader.sessionLoader",
+						"Loader.bookingLoader",
+						"Loader.REPOSITORY_LOOKUP_KEY",
+						"Loader.logger"],
+		"id": "4",
+		"name": "Service 4"
+	}]
+}

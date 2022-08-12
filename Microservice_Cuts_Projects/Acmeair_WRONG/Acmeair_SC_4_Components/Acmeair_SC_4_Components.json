@@ -1,0 +1,66 @@
+{
+	"name":"Acmeair_SC_4_Components",
+	"services": [
+	{
+		"nanoentities": ["AddressInfo.serialVersionUID",
+						"AddressInfo.streetAddress1",
+						"AddressInfo.streetAddress2",
+						"AddressInfo.city",
+						"AddressInfo.stateProvince",
+						"AddressInfo.country",
+						"AddressInfo.postalCode",
+						"CustomerLoader.customerService",
+						"CustomerREST.customerService",
+						"CustomerREST.request",
+						"CustomerService.DAYS_TO_ALLOW_SESSION",
+						"CustomerService.keyGenerator",
+						"Loader.flightLoader",
+						"Loader.customerLoader",
+						"Loader.sessionLoader",
+						"Loader.bookingLoader",
+						"Loader.REPOSITORY_LOOKUP_KEY",
+						"Loader.logger",
+						"LoaderREST.loader",
+						"LoginREST.SESSIONID_COOKIE_NAME",
+						"LoginREST.authService",
+						"LoginREST.customerService",
+						"AppConfig",
+						"AcmeAirApp"],
+		"id": "1",
+		"name": "Service 1"
+	},  {
+		"nanoentities": ["CustomerLoader.customerService",
+						"SessionLoader.authService",
+						"ConnectionManager.connectionManager",
+						"ConnectionManager.logger",
+						"ConnectionManager.mongoClient",
+						"ConnectionManager.db",
+						"MongoConstants.JNDI_NAME",
+						"MongoConstants.KEY",
+						"MongoConstants.KEY_DESCRIPTION",
+						"MongoConstants.HOSTNAME",
+						"MongoConstants.PORT",
+						"MongoConstants.DATABASE"],
+		"id": "2",
+		"name": "Service 2"
+	}, 	{
+		"nanoentities": ["AcmeAirConstants",
+						"ServiceRegister"],
+		"id": "3",
+		"name": "Service 3"
+	}, 	{
+		"nanoentities": ["AuthService.DAYS_TO_ALLOW_SESSION",
+						"AuthService.keyGenerator",
+						"AuthServiceImpl.customerSession",
+						"Util"],
+		"id": "4",
+		"name": "Service 4"
+	}, 	{
+		"nanoentities": ["DateParam.formatter",
+						"DateParam.year",
+						"DateParam.date",
+						"FlightsREST.flightService"],
+		"id": "5",
+		"name": "Service 5"
+	}]
+}

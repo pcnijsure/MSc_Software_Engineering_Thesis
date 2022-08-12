@@ -1,0 +1,106 @@
+{
+  "useCases": [
+    {
+      "name": "createNewOwner",
+      "nanoentitiesRead": [
+        
+      ],
+      "nanoentitiesWritten": [
+        "BaseEntity.id",
+        "Person.firstName",
+        "Person.lastName",
+        "Owner.address",
+        "Owner.city",
+        "Owner.telephone"
+      ]
+    },
+    {
+      "name": "fetchAListOfOwners",
+      "nanoentitiesRead": [
+        "Person.lastName"
+      ],
+      "nanoentitiesWritten": [
+        "BaseEntity.id",
+        "Person.firstName",
+        "Person.lastName",
+        "Owner.address",
+        "Owner.city",
+        "Owner.telephone",
+        "Owner.pets",
+        "NamedEntity.name",
+        "Pet.birthDate",
+        "Pet.type",
+        "Pet.visits",
+        "Visit.date",
+        "Visit.description"
+      ]
+    },
+    {
+      "name": "EditExistingOwner",
+      "nanoentitiesRead": [
+        "BaseEntity.id",
+        "Person.firstName",
+        "Person.lastName",
+        "Owner.address",
+        "Owner.city",
+        "Owner.telephone"
+      ],
+      "nanoentitiesWritten": [
+        "BaseEntity.id",
+        "Person.firstName",
+        "Person.lastName",
+        "Owner.address",
+        "Owner.city",
+        "Owner.telephone"
+      ]
+    },
+    {
+      "name": "fetchAllVets",
+      "nanoentitiesRead": [
+        
+      ],
+      "nanoentitiesWritten": [
+        "Vet.specialties",
+        "NamedEntity.name",
+        "BaseEntity.id"
+      ]
+    },
+    {
+      "name": "createNewPet",
+      "nanoentitiesRead": [
+        
+      ],
+      "nanoentitiesWritten": [
+        "BaseEntity.id",
+        "NamedEntity.name",
+        "Pet.birthDate",
+        "Pet.type"
+      ]
+    },
+    {
+      "name": "editExistingPet",
+      "nanoentitiesRead": [
+        "BaseEntity.id",
+        "NamedEntity.name",
+        "Pet.birthDate",
+        "Pet.type"
+      ],
+      "nanoentitiesWritten": [
+        "BaseEntity.id",
+        "NamedEntity.name",
+        "Pet.birthDate",
+        "Pet.type"
+      ]
+    },
+    {
+      "name": "addNewVisit",
+      "nanoentitiesRead": [
+        "BaseEntity.id"
+      ],
+      "nanoentitiesWritten": [
+        "Visit.date",
+        "Visit.description"
+      ]
+    }
+  ]
+}

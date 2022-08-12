@@ -1,0 +1,51 @@
+{
+  "name": "Cargo_LC_SC_2_Components",
+  "services": [
+    {
+      "nanoentities": [
+        "RouteSpecification.origin",
+        "RouteSpecification.destination",
+        "RouteSpecification.arrivalDeadline"
+      ],
+      "id": "1",
+      "name": "Service 1"
+    },
+    {
+      "nanoentities": [
+        "Delivery.transportStatus",
+        "Delivery.misdirected",
+        "Delivery.estimatedArrivalTime",
+        "Delivery.isUnloadedAtDestination",
+        "Delivery.routingStatus"
+      ],
+      "id": "2",
+      "name": "Service 2"
+    },
+    {
+      "nanoentities": [
+        "Location.unLocode",
+        "Location.name"
+      ],
+      "id": "3",
+      "name": "Service 3"
+    },
+    {
+      "nanoentities": [
+        "Cargo.trackingId"
+      ],
+      "id": "4",
+      "name": "Service 4"
+    },
+    {
+      "nanoentities": [
+        "HandlingEvent.type",
+        "HandlingEvent.location",
+        "HandlingEvent.completionTime",
+        "HandlingEvent.registrationTime",
+        "Itinerary.itineraryNumber"
+      ],
+      "id": "5",
+      "name": "Service 5"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "name" : "Petclinic",
+  "entities": [
+    {
+      "name": "BaseEntity",
+      "nanoentities": [
+		"id"
+      ]
+    },
+    {
+      "name": "NamedEntity",
+      "nanoentities": [
+		"name"
+      ]
+    },
+    {
+      "name": "Person",
+      "nanoentities": [
+		"firstName",
+		"lastName"
+      ]
+    },
+    {
+      "name": "Owner",
+      "nanoentities": [
+		"address",
+		"city",
+		"telephone",
+		"pets"
+      ]
+    },
+	{
+      "name": "Pet",
+      "nanoentities": [
+		"birthDate",
+		"type",
+		"visits"
+      ]
+	},
+	{
+      "name": "PetType",
+      "nanoentities": [
+      ]
+	},
+	{
+      "name": "Visit",
+      "nanoentities": [
+		"date",
+		"description"
+      ]
+	},
+	{
+      "name": "Specialty",
+      "nanoentities": [
+      ]
+	},
+	{
+      "name": "Vet",
+      "nanoentities": [
+		"specialties"
+      ]
+	},
+	{
+      "name": "Vets",
+      "nanoentities": [
+		"vets"
+      ]
+	}
+  ],
+  "relations": [
+    {
+      "origin": "BaseEntity",
+      "destination": "NamedEntity",
+      "type": "INHERITANCE"
+    },
+	{
+      "origin": "BaseEntity",
+      "destination": "Person",
+      "type": "INHERITANCE"
+    },
+	{
+      "origin": "Person",
+      "destination": "Owner",
+      "type": "INHERITANCE"
+    },
+	{
+      "origin": "NamedEntity",
+      "destination": "Pet",
+      "type": "INHERITANCE"
+    },
+	{
+      "origin": "NamedEntity",
+      "destination": "PetType",
+      "type": "INHERITANCE"
+    },
+	{
+      "origin": "NamedEntity",
+      "destination": "Specialty",
+      "type": "INHERITANCE"
+    },
+	{
+      "origin": "Person",
+      "destination": "Vet",
+      "type": "INHERITANCE"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+	"name":"Petclinic_LC_7_Components",
+	"services": [
+	{
+		"nanoentities": ["ClinicServiceTests.owners",
+						"ClinicServiceTests.vets",
+						"ClinicServiceTests.pageable",
+						"Owner.address",
+						"Owner.city",
+						"Owner.telephone",
+						"Owner.pets",
+						"OwnerControllerTests.mockMvc",
+						"OwnerControllerTests.owners",
+						"Pet.birthDate",
+						"Pet.type",
+						"Pet.visits",
+						"VetControllerTests.mockMvc",
+						"VetControllerTests.vets",
+						"Visit.date",
+						"Visit.description",
+						"VisitControllerTests.TEST_OWNER_ID",
+						"VisitControllerTests.TEST_PET_ID",
+						"VisitControllerTests.mockMvc",
+						"VisitControllerTests.owners"],
+		"id": "1",
+		"name": "Service 1"
+	},
+		{
+		"nanoentities": ["OwnerRepository",
+						"PetTypeFormatter.owners"],
+		"id": "2",
+		"name": "Service 2"
+	}, 	{
+		"nanoentities": ["Specialty",
+						"Vet.specialties"],
+		"id": "3",
+		"name": "Service 3"
+	}, 	{
+		"nanoentities": ["package-info",
+						"VetRepository",
+						"BaseEntity.id",
+						"NamedEntity.name",
+						"Person.firstName",
+						"Person.lastName"],
+		"id": "4",
+		"name": "Service 4"
+	}]
+}

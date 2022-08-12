@@ -1,0 +1,57 @@
+{
+  "name": "Petclinic_LC_SC_4_Components",
+  "services": [
+    {
+      "nanoentities": [
+        "Visit.date",
+        "Visit.description",
+        "PetType",
+        "Person.firstName",
+        "Person.lastName"
+      ],
+      "id": "1",
+      "name": "Service 1"
+    },
+    {
+      "nanoentities": [
+        "Vet.specialties"
+      ],
+      "id": "2",
+      "name": "Service 2"
+    },
+    {
+      "nanoentities": [
+        "NamedEntity.name",
+        "Pet.birthDate",
+        "Pet.type",
+        "Pet.visits"
+      ],
+      "id": "3",
+      "name": "Service 3"
+    },
+    {
+      "nanoentities": [
+        "Specialty"
+      ],
+      "id": "4",
+      "name": "Service 4"
+    },
+    {
+      "nanoentities": [
+        "Owner.address",
+        "Owner.city",
+        "Owner.telephone",
+        "Owner.pets"
+      ],
+      "id": "5",
+      "name": "Service 5"
+    },
+    {
+      "nanoentities": [
+        "BaseEntity.id"
+      ],
+      "id": "6",
+      "name": "Service 6"
+    }
+  ]
+}

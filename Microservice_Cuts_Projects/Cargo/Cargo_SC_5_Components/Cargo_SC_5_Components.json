@@ -1,0 +1,78 @@
+{
+  "name": "Cargo_SC_5_Components",
+  "services": [
+    {
+      "nanoentities": [
+        "RouteSpecification.origin",
+        "RouteSpecification.destination",
+        "RouteSpecification.arrivalDeadline"
+      ],
+      "id": "1",
+      "name": "Service 1"
+    },
+    {
+      "nanoentities": [
+        "Leg.loadLocation",
+        "Leg.unloadLocation",
+        "Leg.loadTime",
+        "Leg.unloadTime",
+        "CarrierMovement.departureLocation",
+        "CarrierMovement.arrivalLocation",
+        "CarrierMovement.departureTime",
+        "CarrierMovement.arrivalTime"
+      ],
+      "id": "2",
+      "name": "Service 2"
+    },
+    {
+      "nanoentities": [
+        "Delivery.transportStatus",
+        "Delivery.misdirected",
+        "Delivery.estimatedArrivalTime",
+        "Delivery.isUnloadedAtDestination",
+        "Delivery.routingStatus"
+      ],
+      "id": "3",
+      "name": "Service 3"
+    },
+    {
+      "nanoentities": [
+        "Voyage.voyageNumber"
+	  ],
+      "id": "4",
+      "name": "Service 4"
+    },
+    {
+      "nanoentities": [
+        "Location.unLocode",
+        "Location.name"
+      ],
+      "id": "5",
+      "name": "Service 5"
+    },
+    {
+      "nanoentities": [
+        "Cargo.trackingId"
+      ],
+      "id": "6",
+      "name": "Service 6"
+    },
+    {
+      "nanoentities": [
+        "HandlingEvent.type",
+        "HandlingEvent.location",
+        "HandlingEvent.completionTime",
+        "HandlingEvent.registrationTime"
+      ],
+      "id": "7",
+      "name": "Service 7"
+    },
+    {
+      "nanoentities": [
+        "Itinerary.itineraryNumber"
+      ],
+      "id": "8",
+      "name": "Service 8"
+    }
+  ]
+}

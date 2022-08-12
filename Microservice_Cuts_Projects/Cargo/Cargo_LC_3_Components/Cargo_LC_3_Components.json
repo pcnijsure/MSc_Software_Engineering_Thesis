@@ -1,0 +1,37 @@
+{
+  "name": "Cargo_LC_3_Components",
+  "services": [
+    {
+      "nanoentities": [
+        "Leg.loadLocation",
+        "Leg.unloadLocation",
+        "Leg.loadTime",
+        "Leg.unloadTime"
+      ],
+      "id": "1",
+      "name": "Service 1"
+    },
+    {
+      "nanoentities": [
+        "Location.unLocode",
+        "Location.name"
+      ],
+      "id": "2",
+      "name": "Service 2"
+    },
+    {
+      "nanoentities": [
+        "Cargo.trackingId"
+      ],
+      "id": "3",
+      "name": "Service 3"
+    },
+    {
+      "nanoentities": [
+        "Voyage.voyageNumber"
+      ],
+      "id": "4",
+      "name": "Service 4"
+    }
+  ]
+}

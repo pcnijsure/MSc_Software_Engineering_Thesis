@@ -1,0 +1,55 @@
+{
+	"name":"Petclinic_SC_3_Components",
+	"services": [
+	{
+		"nanoentities": ["OwnerRepository",
+						"OwnerController.VIEWS_OWNER_CREATE_OR_UPDATE_FORM",
+						"OwnerController.owners",
+						"ClinicServiceTests.owners",
+						"ClinicServiceTests.vets",
+						"ClinicServiceTests.pageable",
+						"PetController.VIEWS_PETS_CREATE_OR_UPDATE_FORM",
+						"PetController.owners",
+						"PetControllerTests.TEST_OWNER_ID",
+						"PetControllerTests.TEST_PET_ID",
+						"PetControllerTests.mockMvc",
+						"PetControllerTests.owners",
+						"OwnerControllerTests.TEST_OWNER_ID",
+						"OwnerControllerTests.mockMvc",
+						"OwnerControllerTests.owners",
+						"VisitController.owners",
+						"VisitControllerTests.TEST_OWNER_ID",
+						"VisitControllerTests.TEST_OWNER_ID",
+						"VisitControllerTests.mockMvc",
+						"VisitControllerTests.owners"],
+		"id": "1",
+		"name": "Service 1"
+	},	{
+		"nanoentities": ["PetTypeFormatter.owners",
+						"PetTypeFormatterTests.pets",
+						"PetTypeFormatterTests.PetTypeFormatter"],
+		"id": "2",
+		"name": "Service 2"
+	},  {
+		"nanoentities": ["Pet.birthDate",
+						"Pet.type",
+						"Pet.visits",
+						"Visit.date",
+						"Visit.description"],
+		"id": "3",
+		"name": "Service 3"
+	}, {
+		"nanoentities": ["package-info",
+						"PetType",
+						"Specialty",
+						"Vet.specialties"],
+		"id": "4",
+		"name": "Service 4"
+	}, {
+		"nanoentities": ["NamedEntity.name",
+						"Person.firstName",
+						"Person.lastName"],
+		"id": "5",
+		"name": "Service 5"
+	}]
+}

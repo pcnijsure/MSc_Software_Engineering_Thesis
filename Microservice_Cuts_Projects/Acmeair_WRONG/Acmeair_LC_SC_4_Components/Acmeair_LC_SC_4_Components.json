@@ -1,0 +1,68 @@
+{
+	"name":"Acmeair_LC_SC_4_Components",
+	"services": [
+	{
+		"nanoentities": ["AuthService.DAYS_TO_ALLOW_SESSION",
+						"AuthService.keyGenerator",
+						"BookingService",
+						"BookingServiceImpl.logger",
+						"BookingServiceImpl.booking",
+						"BookingServiceImpl.keyGenerator",
+						"BookingsREST.bs",
+						"ConnectionManager.connectionManager",
+						"ConnectionManager.logger",
+						"ConnectionManager.mongoClient",
+						"ConnectionManager.db",
+						"DateParam.formatter",
+						"DateParam.year",
+						"DateParam.date",
+						"FlightService.logger",
+						"FlightService.useFlightDataRelatedCaching",
+						"FlightService.acmeairDir",
+						"FlightService.originAndDestPortToSegmentCache",
+						"FlightService.flightSegmentAndDataToFlightCache",
+						"FlightService.flightPKtoFlightCache",
+						"FlightServiceImpl.flight",
+						"FlightServiceImpl.flightSegment",
+						"FlightServiceImpl.airportCodeMapping",
+						"FlightServiceImpl.keyGenerator",
+						"FlightsREST.flightService",
+						"MongoConstants.JNDI_NAME",
+						"MongoConstants.KEY",
+						"MongoConstants.KEY_DESCRIPTION",
+						"MongoConstants.HOSTNAME",
+						"MongoConstants.PORT",
+						"MongoConstants.DATABASE"],
+		"id": "1",
+		"name": "Service 1"
+	},
+		{
+		"nanoentities": ["AcmeAirApp",
+						"AcmeAirConstants",
+						"AppConfig",
+						"BookingLoader.bookingService",
+						"ServiceRegister"],
+		"id": "2",
+		"name": "Service 2"
+	}, 	{
+		"nanoentities": ["AuthServiceImpl.customerSession",
+						"CustomerLoader.customerService",
+						"CustomerServiceImpl.customer",
+						"Loader.flightLoader",
+						"Loader.customerLoader",
+						"Loader.sessionLoader",
+						"Loader.bookingLoader",
+						"Loader.REPOSITORY_LOOKUP_KEY",
+						"Loader.logger",
+						"SessionLoader.authService"],
+		"id": "3",
+		"name": "Service 3"
+	}, 	{
+		"nanoentities": ["AirportCodeMapping._id",
+						"AirportCodeMapping.airportName",
+						"FlightLoader.MAX_FLIGHTS_PER_SEGMENT",
+						"FlightLoader.flightService"],
+		"id": "4",
+		"name": "Service 4"
+	}]
+}

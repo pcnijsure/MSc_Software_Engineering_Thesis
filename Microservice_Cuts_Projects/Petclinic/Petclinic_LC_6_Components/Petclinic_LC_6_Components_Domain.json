@@ -1,0 +1,25 @@
+{
+	"name":"Petclinic_LC_6_Components",
+	"services": [
+	{
+		"nanoentities": ["Pet.birthDate",
+						"Pet.type",
+						"Pet.visits",
+						"Visit.date",
+						"Visit.description"],
+		"id": "1",
+		"name": "Service 1"
+	},  {
+		"nanoentities": ["Specialty",
+						"Vet.specialties"],
+		"id": "2",
+		"name": "Service 2"
+	}, 	{
+		"nanoentities": ["BaseEntity.id",
+						"NamedEntity.name",
+						"Person.firstName",
+						"Person.lastName"],
+		"id": "3",
+		"name": "Service 3"
+	}]
+}
