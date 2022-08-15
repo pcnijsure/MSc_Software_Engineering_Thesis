@@ -1,0 +1,205 @@
+﻿{
+  "name": "Cargo_2_IGNORE",
+  "services": [
+    {
+      "nanoentities": [
+        "Cargo.trackingId"
+      ],
+      "id": "A",
+      "name": "Service A"
+    },
+    {
+      "nanoentities": [
+        "RouteSpecification.origin"
+      ],
+      "id": "B",
+      "name": "Service B"
+    },
+    {
+      "nanoentities": [
+        "RouteSpecification.destination"
+      ],
+      "id": "C",
+      "name": "Service C"
+    },
+    {
+      "nanoentities": [
+        "RouteSpecification.arrivalDeadline"
+      ],
+      "id": "D",
+      "name": "Service D"
+    },
+    {
+      "nanoentities": [
+        "Itinerary.itineraryNumber"
+      ],
+      "id": "E",
+      "name": "Service E"
+    },
+    {
+      "nanoentities": [
+        "Delivery.transportStatus"
+      ],
+      "id": "F",
+      "name": "Service F"
+    },
+    {
+      "nanoentities": [
+        "Delivery.misdirected"
+      ],
+      "id": "G",
+      "name": "Service G"
+    },
+    {
+      "nanoentities": [
+        "Delivery.estimatedArrivalTime"
+      ],
+      "id": "H",
+      "name": "Service H"
+    },
+    {
+      "nanoentities": [
+        "Delivery.isUnloadedAtDestination"
+      ],
+      "id": "I",
+      "name": "Service I"
+    },
+    {
+      "nanoentities": [
+        "Delivery.routingStatus"
+      ],
+      "id": "J",
+      "name": "Service J"
+    },
+    {
+      "nanoentities": [
+        "Leg.loadLocation"
+      ],
+      "id": "K",
+      "name": "Service K"
+    },
+    {
+      "nanoentities": [
+        "Leg.unloadLocation"
+      ],
+      "id": "L",
+      "name": "Service L"
+    },
+    {
+      "nanoentities": [
+        "Leg.loadTime"
+      ],
+      "id": "M",
+      "name": "Service M"
+    },
+    {
+      "nanoentities": [
+        "Leg.unloadTime"
+      ],
+      "id": "N",
+      "name": "Service N"
+    },
+    {
+      "nanoentities": [
+        "HandlingEvent.type"
+      ],
+      "id": "O",
+      "name": "Service O"
+    },
+    {
+      "nanoentities": [
+        "HandlingEvent.completionTime"
+      ],
+      "id": "P",
+      "name": "Service P"
+    },
+    {
+      "nanoentities": [
+        "HandlingEvent.registrationTime"
+      ],
+      "id": "Q",
+      "name": "Service Q"
+    },
+    {
+      "nanoentities": [
+        "HandlingEvent.location"
+      ],
+      "id": "R",
+      "name": "Service R"
+    },
+    {
+      "nanoentities": [
+        "Voyage.voyageNumber"
+      ],
+      "id": "S",
+      "name": "Service S"
+    },
+    {
+      "nanoentities": [
+        "CarrierMovement.departureLocation"
+      ],
+      "id": "T",
+      "name": "Service T"
+    },
+    {
+      "nanoentities": [
+        "CarrierMovement.arrivalLocation"
+      ],
+      "id": "U",
+      "name": "Service U"
+    },
+    {
+      "nanoentities": [
+        "CarrierMovement.departureTime"
+      ],
+      "id": "V",
+      "name": "Service V"
+    },
+    {
+      "nanoentities": [
+        "CarrierMovement.arrivalTime"
+      ],
+      "id": "W",
+      "name": "Service W"
+    },
+    {
+      "nanoentities": [
+        "Location.unLocode"
+      ],
+      "id": "X",
+      "name": "Service X"
+    },
+    {
+      "nanoentities": [
+        "Location.name"
+      ],
+      "id": "Y",
+      "name": "Service Y"
+    }
+  ],
+  "useCaseResponsibility": {
+    "Service X": [
+      "Create Location"
+    ],
+    "Service F": [
+      "handleCargoEvent"
+    ],
+    "Service E": [
+      "RouteCargo"
+    ],
+    "Service T": [
+      "AddCarrierMovement"
+    ],
+    "Service C": [
+      "ChangeCargoDestination"
+    ],
+    "Service S": [
+      "Create Voyage"
+    ],
+    "Service A": [
+      "ViewTracking",
+      "ViewCargos",
+      "BookCargo"
+    ]
+  }
+}

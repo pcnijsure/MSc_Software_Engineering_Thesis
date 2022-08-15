@@ -1,0 +1,83 @@
+﻿{
+  "name": "Petclinic_4_M_Dependency",
+  "services": [
+    {
+      "nanoentities": [
+        "NamedEntity.name",
+        "Person.firstName",
+        "Person.lastName",
+        "BaseEntity.id"
+      ],
+      "id": "A",
+      "name": "Service A"
+    },
+    {
+      "nanoentities": [
+        "Owner.address",
+        "Owner.city",
+        "Owner.telephone",
+        "Owner.pets",
+        "Visit.date",
+        "Visit.description",
+        "Pet.birthDate",
+        "Pet.type",
+        "Pet.visits"
+      ],
+      "id": "B",
+      "name": "Service B"
+    },
+    {
+      "nanoentities": [
+        "Vet.specialties"
+      ],
+      "id": "C",
+      "name": "Service C"
+    },
+    {
+      "nanoentities": [
+        "Vets.vets"
+      ],
+      "id": "D",
+      "name": "Service D"
+    }
+  ],
+  "relations": [
+    {
+      "serviceA": "Service A",
+      "serviceB": "Service B",
+      "sharedEntities": [
+        "Owner.address",
+        "Owner.telephone",
+        "Pet.birthDate",
+        "Person.lastName",
+        "Owner.city",
+        "Person.firstName",
+        "Pet.type",
+        "NamedEntity.name",
+        "BaseEntity.id"
+      ],
+      "direction": "BIDIRECTIONAL"
+    },
+    {
+      "serviceA": "Service A",
+      "serviceB": "Service C",
+      "sharedEntities": [
+        "Vet.specialties"
+      ],
+      "direction": "OUTGOING"
+    }
+  ],
+  "useCaseResponsibility": {
+    "Service B": [
+      "fetchAListOfOwners",
+      "addNewVisit"
+    ],
+    "Service A": [
+      "createNewOwner",
+      "EditExistingOwner",
+      "fetchAllVets",
+      "createNewPet",
+      "editExistingPet"
+    ]
+  }
+}

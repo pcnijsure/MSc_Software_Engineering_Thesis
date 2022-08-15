@@ -1,0 +1,127 @@
+﻿{
+  "name": "Petclinic_3_IGNORE_Dependency",
+  "services": [
+    {
+      "nanoentities": [
+        "NamedEntity.name"
+      ],
+      "id": "A",
+      "name": "Service A"
+    },
+    {
+      "nanoentities": [
+        "Owner.address"
+      ],
+      "id": "B",
+      "name": "Service B"
+    },
+    {
+      "nanoentities": [
+        "Owner.city"
+      ],
+      "id": "C",
+      "name": "Service C"
+    },
+    {
+      "nanoentities": [
+        "Owner.telephone"
+      ],
+      "id": "D",
+      "name": "Service D"
+    },
+    {
+      "nanoentities": [
+        "Owner.pets"
+      ],
+      "id": "E",
+      "name": "Service E"
+    },
+    {
+      "nanoentities": [
+        "Person.firstName"
+      ],
+      "id": "F",
+      "name": "Service F"
+    },
+    {
+      "nanoentities": [
+        "Person.lastName"
+      ],
+      "id": "G",
+      "name": "Service G"
+    },
+    {
+      "nanoentities": [
+        "Vet.specialties"
+      ],
+      "id": "H",
+      "name": "Service H"
+    },
+    {
+      "nanoentities": [
+        "Vets.vets"
+      ],
+      "id": "I",
+      "name": "Service I"
+    },
+    {
+      "nanoentities": [
+        "Visit.date"
+      ],
+      "id": "J",
+      "name": "Service J"
+    },
+    {
+      "nanoentities": [
+        "Visit.description"
+      ],
+      "id": "K",
+      "name": "Service K"
+    },
+    {
+      "nanoentities": [
+        "BaseEntity.id"
+      ],
+      "id": "L",
+      "name": "Service L"
+    },
+    {
+      "nanoentities": [
+        "Pet.birthDate"
+      ],
+      "id": "M",
+      "name": "Service M"
+    },
+    {
+      "nanoentities": [
+        "Pet.type"
+      ],
+      "id": "N",
+      "name": "Service N"
+    },
+    {
+      "nanoentities": [
+        "Pet.visits"
+      ],
+      "id": "O",
+      "name": "Service O"
+    }
+  ],
+  "useCaseResponsibility": {
+    "Service J": [
+      "addNewVisit"
+    ],
+    "Service G": [
+      "fetchAListOfOwners"
+    ],
+    "Service B": [
+      "createNewOwner",
+      "EditExistingOwner"
+    ],
+    "Service A": [
+      "fetchAllVets",
+      "createNewPet",
+      "editExistingPet"
+    ]
+  }
+}

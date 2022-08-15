@@ -1,0 +1,59 @@
+﻿{
+  "name": "Petclinic_3_M_Dependency",
+  "services": [
+    {
+      "nanoentities": [
+        "NamedEntity.name",
+        "Visit.date",
+        "Visit.description",
+        "Pet.birthDate",
+        "Pet.type",
+        "Pet.visits",
+        "Owner.address",
+        "Owner.city",
+        "Owner.telephone",
+        "Owner.pets",
+        "Person.firstName",
+        "Person.lastName",
+        "BaseEntity.id"
+      ],
+      "id": "A",
+      "name": "Service A"
+    },
+    {
+      "nanoentities": [
+        "Vet.specialties"
+      ],
+      "id": "B",
+      "name": "Service B"
+    },
+    {
+      "nanoentities": [
+        "Vets.vets"
+      ],
+      "id": "C",
+      "name": "Service C"
+    }
+  ],
+  "relations": [
+    {
+      "serviceA": "Service A",
+      "serviceB": "Service B",
+      "sharedEntities": [
+        "Vet.specialties"
+      ],
+      "direction": "OUTGOING"
+    }
+  ],
+  "useCaseResponsibility": {
+    "Service A": [
+      "createNewOwner",
+      "fetchAListOfOwners",
+      "EditExistingOwner",
+      "fetchAllVets",
+      "createNewPet",
+      "editExistingPet",
+      "addNewVisit"
+    ]
+  }
+}

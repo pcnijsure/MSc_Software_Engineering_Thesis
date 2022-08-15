@@ -1,0 +1,70 @@
+﻿{
+  "name": "Cargo_2_XXL_No_Dependency",
+  "services": [
+    {
+      "nanoentities": [
+        "Cargo.trackingId",
+        "RouteSpecification.origin",
+        "RouteSpecification.destination",
+        "RouteSpecification.arrivalDeadline",
+        "Itinerary.itineraryNumber",
+        "Location.name",
+        "Voyage.voyageNumber",
+        "Location.unLocode",
+        "Leg.loadLocation",
+        "Leg.unloadLocation",
+        "Leg.loadTime",
+        "Leg.unloadTime",
+        "CarrierMovement.departureLocation",
+        "CarrierMovement.arrivalLocation",
+        "CarrierMovement.departureTime",
+        "CarrierMovement.arrivalTime"
+      ],
+      "id": "A",
+      "name": "Service A"
+    },
+    {
+      "nanoentities": [
+        "Delivery.transportStatus",
+        "Delivery.misdirected",
+        "Delivery.estimatedArrivalTime",
+        "Delivery.isUnloadedAtDestination",
+        "Delivery.routingStatus",
+        "HandlingEvent.type",
+        "HandlingEvent.completionTime",
+        "HandlingEvent.registrationTime",
+        "HandlingEvent.location"
+      ],
+      "id": "B",
+      "name": "Service B"
+    }
+  ],
+  "relations": [
+    {
+      "serviceA": "Service A",
+      "serviceB": "Service B",
+      "sharedEntities": [
+        "Cargo.trackingId",
+        "Voyage.voyageNumber",
+        "RouteSpecification.destination",
+        "Delivery.routingStatus"
+      ],
+      "direction": "BIDIRECTIONAL"
+    }
+  ],
+  "useCaseResponsibility": {
+    "Service B": [
+      "ViewTracking",
+      "handleCargoEvent"
+    ],
+    "Service A": [
+      "ViewCargos",
+      "BookCargo",
+      "ChangeCargoDestination",
+      "RouteCargo",
+      "Create Location",
+      "Create Voyage",
+      "AddCarrierMovement"
+    ]
+  }
+}
